@@ -14,6 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "matchHeight": "git://github.com/liabru/jquery-match-height.git#~0.5.2"
   }
 }
