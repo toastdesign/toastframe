@@ -1,0 +1,22 @@
+{
+  "name": "toastframe",
+  "version": "1.0.0",
+  "homepage": "http://www.toastdesign.nl",
+  "author": "Daniel Plinsinga <daniel@toastdesign.nl>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/toastdesign/toastframe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toastdesign/toastframe/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
