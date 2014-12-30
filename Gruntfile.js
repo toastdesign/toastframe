@@ -49,14 +49,24 @@ module.exports = function (grunt) {
           ]
         }
       }
-    }
+    },
+    compass: {                  // Task
+      dist: {                   // Target
+        options: {              // Target options
+          config: 'config.rb',
+          watch: false
+        }
+      }
+    },
   });
  
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-compass');
  
   grunt.registerTask('default', [
     'copy',
-    'uglify'
+    'uglify',
+    'compass'
   ]);
 };

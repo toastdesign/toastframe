@@ -92,11 +92,18 @@ add_action( 'widgets_init', 'toastframe_widgets_init' );
  * Enqueue scripts and styles.
  */
 function toastframe_scripts() {
-	wp_enqueue_style( 'toastframe-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'toastframe-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_register_style('toastframe-style', get_template_directory_uri() . '/dist/css/master.min.css');
+	wp_register_style('font-awesome', get_template_directory_uri() . '/dist/css/font-awesome.min.css');
 
-	wp_enqueue_script( 'toastframe-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_register_script('modernizr', get_template_directory_uri() . '/dist/js/modernizr.min.js', array(), null, false);
+	wp_register_script('toast-scripts', get_template_directory_uri() . '/dist/js/lib.min.js', array(), null, true );
+
+	wp_enqueue_style( 'toastframe-style');
+	wp_enqueue_style( 'font-awesome');
+	
+	wp_enqueue_script('modernizr');
+	wp_enqueue_script('toast-scripts');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
