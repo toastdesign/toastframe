@@ -40,6 +40,12 @@ module.exports = function (grunt) {
             '<%= bower.directory %>/jquery/jquery.js',
             '<%= bower.directory %>/underscore/underscore.js',
             '<%= bower.directory %>/requirejs/require.js',
+            '<%= bower.directory %>/matchHeight/jquery.matchHeight.js',
+            'js/plugins/*', // Custom scripts not trough bower
+            'js/scripts', // Custom scripts loaded last
+          ],
+          '<%= config.dist %>/js/modernizr.min.js': [
+            '<%= bower.directory %>/modernizr/modernizr.js',
           ]
         }
       }
