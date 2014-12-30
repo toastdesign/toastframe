@@ -93,7 +93,7 @@ add_action( 'widgets_init', 'toastframe_widgets_init' );
  */
 function toastframe_scripts() {
 
-	wp_register_style('toastframe-style', get_template_directory_uri() . '/dist/css/master.min.css');
+	wp_register_style('toastframe-style', get_template_directory_uri() . '/dist/css/master.css');
 	wp_register_style('font-awesome', get_template_directory_uri() . '/dist/css/font-awesome.min.css');
 
 	wp_register_script('modernizr', get_template_directory_uri() . '/dist/js/modernizr.min.js', array(), null, false);
