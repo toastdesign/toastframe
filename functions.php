@@ -99,8 +99,9 @@ function toastframe_scripts() {
 	wp_register_script('modernizr', get_template_directory_uri() . '/dist/js/modernizr.min.js', array(), null, false);
 	wp_register_script('toast-scripts', get_template_directory_uri() . '/dist/js/lib.min.js', array(), null, true );
 
-	wp_enqueue_style( 'toastframe-style');
 	wp_enqueue_style( 'font-awesome');
+	wp_enqueue_style( 'toastframe-style');
+	
 	
 	wp_enqueue_script('modernizr');
 	wp_enqueue_script('toast-scripts');
