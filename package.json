@@ -1,20 +1,13 @@
 {
-  "name": "bower_example",
+  "name": "toast_design_framework",
   "version": "0.0.0",
-  "description": "An example of a bower project",
+  "description": "Toast design bower project",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://gist.github.com/7369801.git"
-  },
-  "author": "Chase Adams",
+  "author": "Daniel Plinsinga",
   "license": "BSD",
-  "bugs": {
-    "url": "https://gist.github.com/7369801"
-  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",

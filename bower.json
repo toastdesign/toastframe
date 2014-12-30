@@ -1,10 +1,10 @@
 {
-  "name": "bower_example",
+  "name": "toast_design_framework",
   "version": "0.0.0",
   "authors": [
-    "Chase Adams <chase@realchaseadams.com>"
+    "Daniel Plinsinga <info@toastdesign.nl>"
   ],
-  "description": "An example of how to use bower",
+  "description": "Bower project",
   "license": "MIT",
   "homepage": "http://www.realchaseadams.com",
   "private": true,
