@@ -53,8 +53,9 @@ module.exports = function (grunt) {
     compass: {                  // Task
       dist: {                   // Target
         options: {              // Target options
+          require: 'susy',
           config: 'config.rb',
-          watch: false
+          watch: true
         }
       }
     },

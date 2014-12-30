@@ -1,4 +1,3 @@
-require 'susy'
 require 'breakpoint'
 
 preferred_syntax = :scss
