@@ -44,8 +44,9 @@
 Custom "default" settings
 ========================================================================== */
 $susy: (
-	columns: 42, 
+	columns: 12, 
 	gutters: 1/4,
+	container:1600px,
 	math: fluid,
 	output: float,
 	gutter-position:inside,
