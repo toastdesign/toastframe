@@ -1,3 +1,14 @@
+@import "config";
+
+
+
 #page {
-	@include container(960px);	
+	@include container();	
 }
+
+	#primary {
+		@include span(6);
+	}
+	#secondary {
+		@include span(6);
+	}

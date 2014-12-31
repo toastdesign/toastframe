@@ -1,0 +1,76 @@
+/* ==========================================================================
+// Global defaults of susy
+========================================================================== */
+	// $susy: (
+	//   flow: ltr,
+	//   math: fluid,
+	//   output: float,
+	//   gutter-position: after,
+	//   container: auto,
+	//   container-position: center,
+	//   columns: 4,
+	//   gutters: .25,
+	//   column-width: false,
+	//   global-box-sizing: content-box,
+	//   last-flow: to,
+	//   debug: (
+	//     image: hide,
+	//     color: rgba(#66f, .25),
+	//     output: background,
+	//     toggle: top right,
+	//   ),
+	//   use-custom: (
+	//     background-image: true,
+	//     background-options: false,
+	//     box-sizing: true,
+	//     clearfix: false,
+	//     rem: true,
+	//   )
+	// );
+
+
+
+/* ==========================================================================
+// Setup border box (I always use border box on websites)
+========================================================================== */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+/* ==========================================================================
+Custom "default" settings
+========================================================================== */
+$susy: (
+	columns: 42, 
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position:inside,
+);
+
+/* ==========================================================================
+Fluid bootstrap
+========================================================================== */
+$fluid-bs: (
+	columns: 12,
+	math: fluid,
+	gutters: 30px/70px,
+	column-width: 70px,
+	gutter-position: inside-static,
+  	global-box-sizing:border-box,
+);
+
+/* ==========================================================================
+Static bootstrap
+========================================================================== */
+$static-bs: (
+	columns: 12,
+	math: static,
+	gutters: 30px/70px,
+	column-width: 70px,
+	gutter-position: inside-static,
+  	global-box-sizing:border-box,
+);
