@@ -36,6 +36,12 @@ function mytheme_require_plugins() {
             'slug'      => 'contact-form-7',
             'required'  => false,
         ),
+        // Contact form 7 from wordpress
+        array(
+            'name'      => 'TinyMCE Advanced',
+            'slug'      => 'tinymce-advanced',
+            'required'  => false,
+        ),
 
     );
     $config = array( 
