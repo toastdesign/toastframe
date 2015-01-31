@@ -130,3 +130,8 @@ require get_template_directory() . '/inc/extras.php';
  * Activate TGM Plugin activation
  */
 require get_template_directory() . '/inc/plugin-activation/plugin-activation.php';
+
+/**
+ * Include metabox settings
+ */
+require get_template_directory() . '/inc/meta-box/demo.php';
