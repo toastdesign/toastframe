@@ -28,7 +28,7 @@ function mytheme_require_plugins() {
         array(
             'name'      => 'Meta box',
             'slug'      => 'meta-box',
-            'required'  => false,
+            'required'  => true,
         ),
         // Contact form 7 from wordpress
         array(
