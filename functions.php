@@ -135,3 +135,8 @@ require get_template_directory() . '/inc/plugin-activation/plugin-activation.php
  * Include metabox settings
  */
 require get_template_directory() . '/inc/meta-box/demo.php';
+
+/* ==========================================================================
+Add shortcodes and shortcode buttons
+========================================================================== */
+require get_template_directory() . '/inc/toast-shortcodes.php';
