@@ -129,4 +129,4 @@ require get_template_directory() . '/inc/extras.php';
 /**
  * Activate TGM Plugin activation
  */
-require get_template_directory() . '/inc/plugin-activation.php';
+require get_template_directory() . '/inc/plugin-activation/plugin-activation.php';
