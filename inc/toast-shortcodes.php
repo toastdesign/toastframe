@@ -1,64 +1,4 @@
 <?php
-/* ==========================================================================
-Twitter share shortcode [twitter]
-========================================================================== */
-function toast_twitter($atts, $content=null){
-	$post_url = get_permalink($post->ID);
-	$post_title = get_the_title($post->ID);
-	$tweet = '<a href="http://twitter.com/home/?status=Lees ' . $post_title . ' op ' . $post_url . '" target="_blank">Deel op Twitter</a>';
-
-	return $tweet;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*  HR Dividers
-/*-----------------------------------------------------------------------------------*/
-function toast_hr( $atts, $content = null) {
-
-  extract( shortcode_atts( array(
-    'style' => '1',
-    'margin' => ''
-    ), $atts ) 
-  );
-        
-  if($margin == '') {
-    $return = "";
-  } else{
-    $return = "style='margin:".$margin." !important;'";
-  }
-    
-  return '<div class="hr hr' .$style. '" ' .$return. '></div>';  
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*  Section
-/*-----------------------------------------------------------------------------------*/
-function toast_section( $atts, $content = null) {
-
-extract( shortcode_atts( array(
-  'bgcolor'   => '#ffffff',
-  'bgimage'   => '',
-  'parallax'  => 'false',
-  'padding' => '',
-  'border' => 'none'
-  ), $atts ) );
-
-  if($parallax == 'false') {
-      $var1 = '';
-  }
-  else{
-      $var1 = 'section-parallax';
-  }
-
-  $var2 = '';
-
-  if($bgimage != ''){
-    $var2 = 'background-image: url(' . $bgimage . ');';
-  }
-      
-    return '<div class="section ' . $var1 . '" style="background-color: ' . $bgcolor . '; border: ' . $border . '; padding: ' . $padding . '; ' . $var2 . '"><div class="container clearfix"><div class="sixteen columns">' . do_shortcode($content) . '</div></div></div>';
-}
-
 /*-----------------------------------------------------------------------------------*/
 /*  Columns
 /*-----------------------------------------------------------------------------------*/
@@ -164,10 +104,6 @@ function pre_process_shortcode($content) {
     $orig_shortcode_tags = $shortcode_tags;
     remove_all_shortcodes();
 
-    add_shortcode('hr', 'toast_hr');
-    add_shortcode('twitter', 'toast_twitter');
-    add_shortcode('section', 'toast_section');
-
     add_shortcode('one_third', 'toast_one_third');
     add_shortcode('one_third_last', 'toast_one_third_last');
     add_shortcode('two_third', 'toast_two_third');
@@ -220,14 +156,11 @@ function add_button() {
 
 // Define Position of TinyMCE Icons
 function register_button_3($buttons) {  
-   array_push($buttons, "twitter", "section", "divider", "one_half", "one_third", "two_third", "one_fourth", "three_fourth", "one_fifth");  
+   array_push($buttons, "one_half", "one_third", "two_third", "one_fourth", "three_fourth", "one_fifth");  
    return $buttons;  
 }
 
 function add_plugin($plugin_array) {  
-   $plugin_array['twitter'] = get_template_directory_uri().'/inc/tinymce/tinymce.js';
-   $plugin_array['divider'] = get_template_directory_uri().'/inc/tinymce/tinymce.js';
-   $plugin_array['section'] = get_template_directory_uri().'/inc/tinymce/tinymce.js';
    $plugin_array['one_half'] = get_template_directory_uri().'/inc/tinymce/tinymce.js';
    $plugin_array['one_third'] = get_template_directory_uri().'/inc/tinymce/tinymce.js';
    $plugin_array['two_third'] = get_template_directory_uri().'/inc/tinymce/tinymce.js';
