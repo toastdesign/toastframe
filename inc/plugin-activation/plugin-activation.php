@@ -18,17 +18,11 @@ function mytheme_require_plugins() {
 
         ),
  
-        // Shortcoder from wordpress
-        array(
-            'name'      => 'Shortcoder',
-            'slug'      => 'shortcoder',
-            'required'  => false,
-        ),
         // Metabox from wordpress
         array(
             'name'      => 'Meta box',
             'slug'      => 'meta-box',
-            'required'  => true,
+            'required'  => false,
         ),
         // Contact form 7 from wordpress
         array(
@@ -36,13 +30,6 @@ function mytheme_require_plugins() {
             'slug'      => 'contact-form-7',
             'required'  => false,
         ),
-        // Contact form 7 from wordpress
-        array(
-            'name'      => 'TinyMCE Advanced',
-            'slug'      => 'tinymce-advanced',
-            'required'  => false,
-        ),
-
     );
     $config = array( 
     	'default_path' => '',                      // Default absolute path to pre-packaged plugins.
