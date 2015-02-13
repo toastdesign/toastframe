@@ -97,17 +97,12 @@ function add_button() {
    {  
      add_filter('mce_external_plugins', 'add_plugin');  
      add_filter('mce_buttons_3', 'register_button_3');
-     add_filter('mce_buttons_4', 'register_button_4');  
    }  
 } 
 
 // Define Position of TinyMCE Icons
 function register_button_3($buttons) {  
-   array_push($buttons, "twitter", "section");  
-   return $buttons;  
-} 
-function register_button_4($buttons) {  
-   array_push($buttons, "divider");  
+   array_push($buttons, "twitter", "section", "divider");  
    return $buttons;  
 }
 
