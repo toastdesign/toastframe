@@ -28,16 +28,25 @@
 	//   )
 	// );
 
+	// $susy: (
+	// 	columns: 12, 
+	// 	gutters: 1/4,
+	// 	container:1600px,
+	// 	math: fluid,
+	// 	output: float,
+	// 	gutter-position:inside,
+	// );
+
 /* ==========================================================================
 Custom "default" settings
 ========================================================================== */
 $susy: (
-	columns: 12, 
-	gutters: 1/4,
-	container:1600px,
+	columns: 12,
 	math: fluid,
-	output: float,
-	gutter-position:inside,
+	gutters: 30px/70px,
+	column-width: 70px,
+	gutter-position: inside-static,
+  	global-box-sizing:border-box,
 );
 
 /* ==========================================================================
