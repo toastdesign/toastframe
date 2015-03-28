@@ -111,30 +111,33 @@ function toastframe_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'toastframe_scripts' );
 
-/**
- * Implement the Custom Header feature.
- */
+
+
+
+/* ==========================================================================
+Implement the Custom Header feature.
+========================================================================== */
 //require get_template_directory() . '/inc/custom-header.php';
 
-/**
- * Custom template tags for this theme.
- */
+/* ==========================================================================
+Load google fonts
+========================================================================== */
+require get_template_directory() . '/inc/google-fonts.php';
+
+/* ==========================================================================
+Custom template tags for this theme.
+========================================================================== */
 require get_template_directory() . '/inc/template-tags.php';
 
-/**
- * Custom functions that act independently of the theme templates.
- */
+/* ==========================================================================
+Custom functions that act independently of the theme templates.
+========================================================================== */
 require get_template_directory() . '/inc/extras.php';
 
-/**
- * Activate TGM Plugin activation
- */
+/* ==========================================================================
+Activate TGM Plugin activation
+========================================================================== */
 require get_template_directory() . '/inc/plugin-activation/plugin-activation.php';
-
-/**
- * Include metabox settings
- */
-require get_template_directory() . '/inc/meta-box/demo.php';
 
 /* ==========================================================================
 Add shortcodes and shortcode buttons
