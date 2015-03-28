@@ -99,8 +99,94 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'name' => __( 'Geavanceerde Instellingen ' ),
+		'name' => __( 'Contact gegevens' ),
 		'type' => 'heading'
+	);
+
+	$options[] = array(
+		'name' => __( 'Bedrijfnaam' ),
+		'id' => 'contact_company_name',
+		'std' => '',
+		'type' => 'text'
+	);
+
+	$options[] = array(
+		'name' => __( 'Email voor contact' ),
+		'id' => 'contact_email',
+		'std' => '',
+		'type' => 'text'
+	);
+
+	$options[] = array(
+		'name' => __( 'Telefoonnummer voor contact' ),
+		'id' => 'contact_phone',
+		'std' => '',
+		'type' => 'text'
+	);
+
+	$options[] = array(
+		'name' => __( 'Straat' ),
+		'id' => 'contact_street',
+		'std' => '',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Huisnummer' ),
+		'id' => 'contact_number',
+		'std' => '',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Postcode' ),
+		'id' => 'contact_zipcode',
+		'std' => '',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Plaats' ),
+		'id' => 'contact_city',
+		'std' => '',
+		'type' => 'text'
+	);
+
+	$options[] = array(
+		'name' => __( 'Social Media Links' ),
+		'type' => 'heading'
+	);
+
+	$options[] = array(
+		'name' => __( 'Facebook' ),
+		'id' => 'social_facebook',
+		'std' => '',
+		'type' => 'text'
+	);
+
+	$options[] = array(
+		'name' => __( 'Twitter' ),
+		'id' => 'social_twitter',
+		'std' => '',
+		'type' => 'text'
+	);
+
+	$options[] = array(
+		'name' => __( 'Pinterest' ),
+		'id' => 'social_pinterest',
+		'std' => '',
+		'type' => 'text'
+	);
+
+	$options[] = array(
+		'name' => __( 'Linkedin' ),
+		'id' => 'social_linkedin',
+		'std' => '',
+		'type' => 'text'
+	);
+
+	$options[] = array(
+		'name' => __( 'Instagram' ),
+		'id' => 'social_instagram',
+		'std' => '',
+		'type' => 'text'
 	);
 
 	$options[] = array(
