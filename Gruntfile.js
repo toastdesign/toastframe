@@ -26,6 +26,12 @@ module.exports = function (grunt) {
          cwd: '<%= config.app %>/_lib/font-awesome',
          src: 'fonts/*',
          dest: '<%= config.dist %>'
+       },
+       {
+         expand: true,
+         cwd: '<%= config.app %>/_lib/magnific-popup',
+         src: 'dist/magnific-popup.css',
+         dest: '<%= config.dist %>'
        }]
       }
     },
@@ -38,6 +44,7 @@ module.exports = function (grunt) {
         files: {
           '<%= config.dist %>/js/lib.min.js': [
             '<%= bower.directory %>/jquery/jquery.js',
+            '<%= bower.directory %>/magnific-popup/dist/jquery.magnific-popup.min.js',
             'js/plugins/*', // Custom scripts not trough bower
             'js/scripts.js', // Custom scripts loaded last
           ],
