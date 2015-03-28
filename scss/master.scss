@@ -3,20 +3,11 @@
 @import "breakpoint";
 
 // Custom styles
-@import "globals/reset";
-@import "globals/mixins";
-@import "globals/helpers";
-@import "globals/variables";
-@import "globals/scafolding";
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "helpers";
 
-@import "layout/base";
-@import "layout/header";
-@import "layout/navigation";
 
-@import "modules/buttons";
+@import "layout";
 
-@import "partials/home";
-
-@import "themes/default";
-
-// @import "vendors/underscore";

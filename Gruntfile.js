@@ -38,9 +38,6 @@ module.exports = function (grunt) {
         files: {
           '<%= config.dist %>/js/lib.min.js': [
             '<%= bower.directory %>/jquery/jquery.js',
-            '<%= bower.directory %>/underscore/underscore.js',
-            '<%= bower.directory %>/requirejs/require.js',
-            '<%= bower.directory %>/matchHeight/jquery.matchHeight.js',
             'js/plugins/*', // Custom scripts not trough bower
             'js/scripts.js', // Custom scripts loaded last
           ],

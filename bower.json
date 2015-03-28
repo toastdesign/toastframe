@@ -19,7 +19,6 @@
   "dependencies": {
     "jquery": "~2.0.3",
     "font-awesome": "~4.0.3",
-    "matchHeight": "~0.5.2",
     "modernizr": "~2.8.3"
   }
 }
