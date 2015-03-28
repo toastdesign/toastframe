@@ -23,6 +23,12 @@ function mytheme_require_plugins() {
             'slug'      => 'contact-form-7',
             'required'  => false,
         ),
+        // Sidebar generator
+        array(
+            'name'      => 'SMK Sidebar Generator',
+            'slug'      => 'smk-sidebar-generator',
+            'required'  => false,
+        ),
     );
     $config = array( 
     	'default_path' => '',                      // Default absolute path to pre-packaged plugins.

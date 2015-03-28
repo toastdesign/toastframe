@@ -21,5 +21,7 @@
 
 <?php wp_footer(); ?>
 
+<?php echo of_get_option('googlecode'); ?>
+
 </body>
 </html>

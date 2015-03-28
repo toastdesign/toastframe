@@ -6,6 +6,12 @@
  */
 
 /**
+ * Set options framework
+ */
+define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/options-framework/' );
+require_once dirname( __FILE__ ) . '/inc/options-framework/options-framework.php';
+
+/**
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
@@ -71,24 +77,6 @@ endif; // toastframe_setup
 add_action( 'after_setup_theme', 'toastframe_setup' );
 
 /**
- * Register widget area.
- *
- * @link http://codex.wordpress.org/Function_Reference/register_sidebar
- */
-function toastframe_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'toastframe' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
-}
-add_action( 'widgets_init', 'toastframe_widgets_init' );
-
-/**
  * Enqueue scripts and styles.
  */
 function toastframe_scripts() {
@@ -119,27 +107,17 @@ Implement the Custom Header feature.
 ========================================================================== */
 //require get_template_directory() . '/inc/custom-header.php';
 
-/* ==========================================================================
-Load google fonts
-========================================================================== */
+// Load google fonts
 require get_template_directory() . '/inc/google-fonts.php';
 
-/* ==========================================================================
-Custom template tags for this theme.
-========================================================================== */
+// Custom template tags for this theme.
 require get_template_directory() . '/inc/template-tags.php';
 
-/* ==========================================================================
-Custom functions that act independently of the theme templates.
-========================================================================== */
+// Custom functions that act independently of the theme templates.
 require get_template_directory() . '/inc/extras.php';
 
-/* ==========================================================================
-Activate TGM Plugin activation
-========================================================================== */
+// Activate TGM Plugin activation
 require get_template_directory() . '/inc/plugin-activation/plugin-activation.php';
 
-/* ==========================================================================
-Add shortcodes and shortcode buttons
-========================================================================== */
+// Add shortcodes and shortcode buttons
 require get_template_directory() . '/inc/toast-shortcodes.php';
