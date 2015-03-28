@@ -1,5 +1,10 @@
 @import "config";
 
+$portrait: 	768px;
+$landscape:	1024px;
+$desktop:	1200px;
+
+
 /* ==========================================================================
 Page 
 ========================================================================== */
@@ -8,10 +13,14 @@ Page
 }
 
 /* ==========================================================================
-Mobile
+Mobile first approach some start here
 ========================================================================== */
 #content {
 	@include clearfix;
+}
+
+#masthead {
+	@include span(12);
 }
 
 #primary {
@@ -26,7 +35,7 @@ Mobile
 /* ==========================================================================
 Tablet portrait
 ========================================================================== */
-@include breakpoint(min-width 768px){
+@include breakpoint($portrait){
 	#primary {
 		@include span(8);
 	}
@@ -40,13 +49,13 @@ Tablet portrait
 /* ==========================================================================
 Tablet landscape
 ========================================================================== */
-@include breakpoint(min-width 1024px){
+@include breakpoint($landscape){
 	#primary {
-		@include span(8);
+		@include span(4);
 	}
 
 	#secondary {
-		@include span(4);
+		@include span(8);
 	}
 }
 
@@ -54,7 +63,7 @@ Tablet landscape
 /* ==========================================================================
 Big screens
 ========================================================================== */
-@include breakpoint(min-width 1140px){
+@include breakpoint($desktop){
 	#primary {
 		@include span(8);
 	}
