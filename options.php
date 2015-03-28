@@ -47,6 +47,7 @@ function optionsframework_options() {
 		'type' => 'heading'
 	);
 
+
 	$options[] = array(
 		'name' => __( 'Contact gegevens' ),
 		'type' => 'heading'
