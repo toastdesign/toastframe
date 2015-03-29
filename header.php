@@ -28,7 +28,7 @@
 			</div><!-- .site-branding -->
 			
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'h-hor-list h-clean-list', 'container'=> '') ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'h-clean-list', 'container'=> '') ); ?>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
