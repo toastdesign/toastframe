@@ -9,3 +9,40 @@ Lists
 		list-style: none;
 	}
 }
+
+// Horizontal list with dropdown
+.h-hor-list {
+	@extend .h-clean-list;
+	@include clearfix();
+	
+	li {
+		float:left;
+		position:relative;
+	}
+}
+
+// Horizontal list with dropdown
+.h-hor-list-dropdown {
+	@extend .h-clean-list;
+	@include clearfix();
+	li {
+		float:left;
+		position:relative;
+
+		ul {
+			display:none;
+			padding:0;
+			li {
+				display: block;
+				float:none;
+			}
+		}
+
+		&:hover {
+			> ul {
+				position: absolute;
+				display:block;
+			}
+		}
+	}
+}

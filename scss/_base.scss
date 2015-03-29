@@ -50,6 +50,7 @@ pre {
  white-space: -pre-wrap;      /* Opera 4-6 */
  white-space: -o-pre-wrap;    /* Opera 7 */
  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ font-family: "Courier New", Courier, monospace;
 }
 
 /* ==========================================================================
@@ -117,6 +118,5 @@ Lists
 ul,
 ol {
 	padding-left:20px;
-	list-style-position:outside;
 }
 
