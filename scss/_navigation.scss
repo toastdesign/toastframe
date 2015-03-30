@@ -1,0 +1,51 @@
+.main-navigation-off-canvas {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background: #eee;
+    overflow-y: auto;
+    transition: height 0.3s ease;
+    
+    a {
+        display: block;
+        background:#fff;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        color: #333;
+        padding: 15px;
+        &:hover, &:focus {
+            background: #eee;
+        }
+    }
+    
+    ul {
+        padding:0;
+    
+        // Submenu
+        ul {
+    
+            a {
+            padding-left:35px;
+        }
+    
+            // Third Sublevel
+            ul {
+    
+                a {
+                    padding-left:55px;
+                }
+            }
+        }
+    }
+
+    // If class is open
+    &.open {
+        height:100%;
+    }
+
+    // Show on mobile only
+    @include breakpoint($landscape){
+        display:none;
+    }
+}
