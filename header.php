@@ -19,6 +19,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<nav id="site-navigation-off-canvas" class="main-navigation-off-canvas" role="navigation">
+	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'h-clean-list', 'container'=> '') ); ?>
+</nav><!-- #site-navigation -->
+
 <div id="page" class="hfeed site">
 
 	<header id="masthead" class="site-header clearfix" role="banner">

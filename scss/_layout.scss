@@ -10,7 +10,45 @@ Page
 ========================================================================== */
 #page {
 	@include container;
+	float: right;
+ 	width: 100%;
+  	transition: width 0.3s ease;
 }
+
+
+/* ==========================================================================
+off canvas navgation
+========================================================================== */
+.main-navigation-off-canvas {
+  position: fixed;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #3B3B3B;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+  a {
+    display: block;
+    background: linear-gradient(#3E3E3E, #383838);
+    border-top: 1px solid #484848;
+    border-bottom: 1px solid #2E2E2E;
+    color: white;
+    padding: 15px;
+    &:hover, &:focus {
+      background: linear-gradient(#484848, #383838);
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 34px;
+    // background: linear-gradient(left, rgba(black, 0), rgba(black, 0.4));
+  }
+}
+
 
 /* ==========================================================================
 Mobile first approach some start here
