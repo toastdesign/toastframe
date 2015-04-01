@@ -43,9 +43,4 @@
     &.open {
         height:100%;
     }
-
-    // Show on mobile only
-    @include breakpoint($landscape){
-        display:none;
-    }
 }

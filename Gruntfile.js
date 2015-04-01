@@ -54,24 +54,39 @@ module.exports = function (grunt) {
         }
       }
     },
-    compass: {                  // Task
-      dist: {                   // Target
-        options: {              // Target options
-          require: 'susy',
-          config: 'config.rb',
-          watch: true
+    sass: {
+        options: {
+            sourceMap: true,
+        },
+        dist: {
+            options: {
+
+            },
+            files: {
+                'dist/css/master.css': 'scss/master.scss'
+            }
         }
-      }
+    },
+    watch: {
+      options: {
+        livereload: false,
+      },
+      css: {
+        files: ['scss/*.scss'],
+        tasks: ['sass'],
+      },
     },
   });
  
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
  
   grunt.registerTask('default', [
     'copy',
     'uglify',
-    'compass'
+    'sass',
+    'watch',
   ]);
 };

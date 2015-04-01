@@ -5,7 +5,7 @@
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "postinstall": "node_modules/bower/bin/bower install && grunt"
+    "postinstall": "node_modules/bower/bin/bower install && grunt"
   },
   "author": "Daniel Plinsinga",
   "license": "BSD",
@@ -14,7 +14,9 @@
     "grunt": "~0.4.1",
     "grunt-contrib-compass": "^1.0.1",
     "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-uglify": "~0.2.5"
+    "grunt-contrib-uglify": "~0.2.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^0.18.1",
+    "susy": "^2.2.2"
   }
 }
-  

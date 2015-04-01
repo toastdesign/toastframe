@@ -9,7 +9,7 @@ $desktop:	1200px;
 Page 
 ========================================================================== */
 #page {
-	@include container;
+	
 }
 
 
@@ -17,59 +17,59 @@ Page
 Mobile first approach some start here
 ========================================================================== */
 #content {
-	@include clearfix;
+
 }
 
 #masthead {
-	@include span(12);
+
 }
 
 #primary {
-	@include span(12);
+
 }
 
 #secondary {
-	@include span(12);
+
 }
 
 
 /* ==========================================================================
 Tablet portrait
 ========================================================================== */
-@include breakpoint($portrait){
+
 	#primary {
-		@include span(8);
+
 	}
 
 	#secondary {
-		@include span(4);
+
 	}
-}
+
 
 
 /* ==========================================================================
 Tablet landscape
 ========================================================================== */
-@include breakpoint($landscape){
+
 	#primary {
-		@include span(4);
+
 	}
 
 	#secondary {
-		@include span(8);
+
 	}
-}
+
 
 
 /* ==========================================================================
 Big screens
 ========================================================================== */
-@include breakpoint($desktop){
+
 	#primary {
-		@include span(8);
+
 	}
 
 	#secondary {
-		@include span(4);
+
 	}
-}
+
