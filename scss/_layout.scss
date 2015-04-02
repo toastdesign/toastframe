@@ -1,4 +1,11 @@
-@import "config";
+$susy: (
+	columns: 12,
+	math: fluid,
+	gutters:.50,
+	column-width: 70px,
+	gutter-position: inside,
+  	global-box-sizing:border-box,
+);
 
 $portrait: 	768px;
 $landscape:	1024px;
@@ -21,15 +28,15 @@ Mobile first approach some start here
 }
 
 #masthead {
-
+	
 }
 
 #primary {
-
+@include span(8);
 }
 
 #secondary {
-
+@include span(4);
 }
 
 

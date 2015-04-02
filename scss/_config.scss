@@ -1,74 +1,10 @@
 /* ==========================================================================
-// Global defaults of susy
-========================================================================== */
-	// $susy: (
-	//   flow: ltr,
-	//   math: fluid,
-	//   output: float,
-	//   gutter-position: after,
-	//   container: auto,
-	//   container-position: center,
-	//   columns: 4,
-	//   gutters: .25,
-	//   column-width: false,
-	//   global-box-sizing: content-box,
-	//   last-flow: to,
-	//   debug: (
-	//     image: hide,
-	//     color: rgba(#66f, .25),
-	//     output: background,
-	//     toggle: top right,
-	//   ),
-	//   use-custom: (
-	//     background-image: true,
-	//     background-options: false,
-	//     box-sizing: true,
-	//     clearfix: false,
-	//     rem: true,
-	//   )
-	// );
-
-	// $susy: (
-	// 	columns: 12, 
-	// 	gutters: 1/4,
-	// 	container:1600px,
-	// 	math: fluid,
-	// 	output: float,
-	// 	gutter-position:inside,
-	// );
-
-/* ==========================================================================
 Custom "default" settings
 ========================================================================== */
 $susy: (
 	columns: 12,
-	math: fluid,
-	gutters: 30px/70px,
-	column-width: 70px,
-	gutter-position: inside-static,
-  	global-box-sizing:border-box,
-);
-
-/* ==========================================================================
-Fluid bootstrap
-========================================================================== */
-$fluid-bs: (
-	columns: 12,
-	math: fluid,
-	gutters: 30px/70px,
-	column-width: 70px,
-	gutter-position: inside-static,
-  	global-box-sizing:border-box,
-);
-
-/* ==========================================================================
-Static bootstrap
-========================================================================== */
-$static-bs: (
-	columns: 12,
-	math: static,
-	gutters: 30px/70px,
-	column-width: 70px,
-	gutter-position: inside-static,
-  	global-box-sizing:border-box,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
 );

@@ -63,7 +63,7 @@ module.exports = function (grunt) {
         dist: {
             files: {
                 'dist/css/master.css': 'scss/master.scss'
-            }
+            },
         }
     },
     watch: {
