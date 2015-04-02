@@ -43,14 +43,16 @@ Mobile first approach some start here
 /* ==========================================================================
 Tablet portrait
 ========================================================================== */
-
+@include breakpoint($desktop){
 	#primary {
-
+		@include span(1);
 	}
 
 	#secondary {
-
+		@include span(1);
 	}
+}
+	
 
 
 
