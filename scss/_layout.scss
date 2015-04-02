@@ -1,9 +1,9 @@
 $susy: (
 	columns: 12,
 	math: fluid,
-	gutters:.50,
+	gutters:(30/70),
 	column-width: 70px,
-	gutter-position: inside,
+	gutter-position: inside-static,
   	global-box-sizing:border-box,
 );
 
