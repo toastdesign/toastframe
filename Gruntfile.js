@@ -1,3 +1,4 @@
+
 var pkgjson = require('./package.json');
  
 var config = {
@@ -57,11 +58,9 @@ module.exports = function (grunt) {
     sass: {
         options: {
             sourceMap: true,
+            outputStyle: 'compressed',
         },
         dist: {
-            options: {
-
-            },
             files: {
                 'dist/css/master.css': 'scss/master.scss'
             }
@@ -77,7 +76,7 @@ module.exports = function (grunt) {
       },
     },
   });
- 
+  
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-sass');
