@@ -4,9 +4,10 @@
 /* ==========================================================================
 // Variables mixins ect
 ========================================================================== */
-@import "variables"; // All variables
-@import "mixins"; // Usefull mixins
-@import "helpers"; // Helper classes
+@import "variables"; 	// All variables
+@import "placeholders"; // Placeholders
+@import "mixins"; 		// Usefull mixins
+@import "helpers"; 		// Helper classes
 
 /* ==========================================================================
 // Reset and basic css styles

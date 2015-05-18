@@ -2,9 +2,15 @@
 Colors
 // Gray and brand colors for use across website.
 ========================================================================== */
+$black: 		#000000;
+$gray: 			#333333;
+$gray-light: 	#868686;
+$white:			#ffffff;
 
 
-
+$orange: 		#ff6314;
+$dark-blue: 	#003770;
+$light-blue: 	#bdcfdd;
 
 /* ==========================================================================
 Scafolding
@@ -12,15 +18,50 @@ Scafolding
 ========================================================================== */
 $body-bg:               #fff;
 $text-color:            #333;
-$link-color:            #ff6600;
-$link-hover-color:      #ff9989;
-
+$link-color:            $dark-blue;
+$link-hover-color:      $orange;
 
 /* ==========================================================================
 Typography
 // Font, line-height, and color for body text, headings, and more.
 ========================================================================== */
-$font-family:  		"Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-size:          16px;
-$line-height:        1.4;
+$font-family:  			"Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-family: 	"Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size:          	14px;
+$line-height:        	1.6;
+
+
+
+$h1-font-family:$headings-font-family;
+$h1-font-size:23px;
+$h1-line-height:1.2;
+
+$h2-font-family:$headings-font-family;
+$h2-font-size:23px;
+$h2-line-height:1.2;
+
+$h3-font-family:$headings-font-family;
+$h3-font-size:17px;
+$h3-line-height:1.6;
+
+$h4-font-family:$headings-font-family;
+$h4-font-size:17px;
+$h4-line-height:1.2;
+
+$h5-font-family:$headings-font-family;
+$h5-font-size:19px;
+$h5-line-height:1.2;
+/* ==========================================================================
+Button styles
+========================================================================== */
+$btn-bg: $orange;
+$btn-bg-hover:$dark-blue;
+$btn-text: $white;
+$btn-text-hover:$white;
+$btn-padding: 8px 20px;
+
+// Alt styles
+$btn-bg-alt: $white;
+$btn-text-alt: $dark-blue;
+$btn-border-alt: 1px solid $dark-blue;
 

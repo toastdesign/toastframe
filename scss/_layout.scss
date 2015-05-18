@@ -32,24 +32,24 @@ Mobile first approach some start here
 }
 
 #primary {
-@include span(8);
+@include span(12);
 }
 
 #secondary {
-@include span(4);
+@include span(12);
 }
 
 
 /* ==========================================================================
 Tablet portrait
 ========================================================================== */
-@include breakpoint($desktop){
+@include breakpoint($portrait){
 	#primary {
-		@include span(1);
+		@include span(8);
 	}
 
 	#secondary {
-		@include span(1);
+		@include span(4);
 	}
 }
 	
@@ -59,26 +59,27 @@ Tablet portrait
 /* ==========================================================================
 Tablet landscape
 ========================================================================== */
-
+@include breakpoint($landscape){
 	#primary {
-
+		@include span(8);
 	}
 
 	#secondary {
-
+		@include span(4);
 	}
+}
 
 
 
 /* ==========================================================================
 Big screens
 ========================================================================== */
-
+@include breakpoint($desktop){
 	#primary {
-
+		@include span(8);
 	}
 
 	#secondary {
-
+		@include span(4);
 	}
-
+}
