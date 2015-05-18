@@ -13,7 +13,7 @@ add_action( 'tgmpa_register', 'mytheme_require_plugins' );
 function mytheme_require_plugins() {
  
     $plugins = array(
-    	// This is an example of how to include a plugin pre-packaged with a theme.
+        // This is an example of how to include a plugin pre-packaged with a theme.
         array(
 
         ),
@@ -29,9 +29,15 @@ function mytheme_require_plugins() {
             'slug'      => 'smk-sidebar-generator',
             'required'  => false,
         ),
+
+         array(
+            'name'      => 'Custom post type ui',
+            'slug'      => 'custom-post-type-ui',
+            'required'  => false,
+        ),        
     );
     $config = array( 
-    	'default_path' => '',                      // Default absolute path to pre-packaged plugins.
+        'default_path' => '',                      // Default absolute path to pre-packaged plugins.
         'menu'         => 'tgmpa-install-plugins', // Menu slug.
         'has_notices'  => true,                    // Show admin notices or not.
         'dismissable'  => false,                   // If false, a user cannot dismiss the nag message.
