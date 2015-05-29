@@ -1,31 +1,26 @@
 // @import"susy";
 @import "../src/_lib/susy/sass/susy";
 @import "../src/_lib/breakpoint-sass/stylesheets/breakpoint";
+@import "helpers/variables"; 	// All variables
 /* ==========================================================================
-// Variables mixins ect
+// Base
 ========================================================================== */
-@import "variables"; 	// All variables
-@import "placeholders"; // Placeholders
-@import "mixins"; 		// Usefull mixins
-@import "helpers"; 		// Helper classes
+@import "base/reset.scss";
+@import "base/typography.scss";
 
 /* ==========================================================================
-// Reset and basic css styles
+Helpers
 ========================================================================== */
-@import "base"; 
+@import "helpers/placeholders"; // Placeholders
+@import "helpers/mixins"; 		// Usefull mixins
 
 /* ==========================================================================
-// Global Site Layout
+Layout
 ========================================================================== */
-@import "layout";
+@import "layout/grid"; 	// All variables
+@import "layout/header"; 	// All variables
+@import "layout/footer"; 	// All variables
+@import "layout/sidebar"; 	// All variables
+@import "layout/forms"; 	// All variables
 
-/* ==========================================================================
-// All re-usable modules (buttons ect)
-========================================================================== */
-@import "modules";
-
-/* ==========================================================================
-Big site modules
-========================================================================== */
-@import "navigation";
 

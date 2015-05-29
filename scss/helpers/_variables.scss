@@ -9,8 +9,8 @@ $white:			#ffffff;
 
 
 $orange: 		#ff6314;
-$dark-blue: 	#003770;
-$light-blue: 	#bdcfdd;
+$blue-dark: 	#eee;
+$blue-light: 	#efefef;
 
 /* ==========================================================================
 Scafolding
@@ -18,50 +18,37 @@ Scafolding
 ========================================================================== */
 $body-bg:               #fff;
 $text-color:            #333;
-$link-color:            $dark-blue;
+$link-color:            $blue-dark;
 $link-hover-color:      $orange;
 
 /* ==========================================================================
 Typography
 // Font, line-height, and color for body text, headings, and more.
 ========================================================================== */
-$font-family:  			"Helvetica Neue", Helvetica, Arial, sans-serif;
-$headings-font-family: 	"Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-size:          	14px;
-$line-height:        	1.6;
+$base-font:  	"Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$custom-font:	"Helvetica Neue", Helvetica, Arial, sans-serif;
 
+$base-font-size:        14px;
+$base-line-height:      1.6;
 
-
-$h1-font-family:$headings-font-family;
-$h1-font-size:23px;
-$h1-line-height:1.2;
-
-$h2-font-family:$headings-font-family;
-$h2-font-size:23px;
-$h2-line-height:1.2;
-
-$h3-font-family:$headings-font-family;
-$h3-font-size:17px;
-$h3-line-height:1.6;
-
-$h4-font-family:$headings-font-family;
-$h4-font-size:17px;
-$h4-line-height:1.2;
-
-$h5-font-family:$headings-font-family;
-$h5-font-size:19px;
-$h5-line-height:1.2;
+/* ==========================================================================
+Headings
+========================================================================== */
+$h1-font-size:		22px;
+$h1-line-height:	22px;
+$h1-margin-bottom:	22px;
 /* ==========================================================================
 Button styles
 ========================================================================== */
-$btn-bg: $orange;
-$btn-bg-hover:$dark-blue;
-$btn-text: $white;
-$btn-text-hover:$white;
-$btn-padding: 8px 20px;
 
-// Alt styles
-$btn-bg-alt: $white;
-$btn-text-alt: $dark-blue;
-$btn-border-alt: 1px solid $dark-blue;
+/* ==========================================================================
+Form styles
+========================================================================== */
+$input-height:			45px;
+$input-bg:				#ccc;
+$input-color:			#ccc;
+$input-border:			1px;
+$input-border-color:	#ccc;
+$input-border-radius:	0px;
 
