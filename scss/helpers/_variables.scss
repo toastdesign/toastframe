@@ -7,9 +7,8 @@ $gray: 			#333333;
 $gray-light: 	#868686;
 $white:			#ffffff;
 
-
 $orange: 		#ff6314;
-$blue-dark: 	#eee;
+$blue-dark: 	#ff6600;
 $blue-light: 	#efefef;
 
 /* ==========================================================================
@@ -17,30 +16,78 @@ Scafolding
 // Settings for some of the most global styles.
 ========================================================================== */
 $body-bg:               #fff;
-$text-color:            #333;
+$text-color:            #3a3a3a;
+
+// Links
 $link-color:            $blue-dark;
 $link-hover-color:      $orange;
+$link-decoration:		none;
+$link-decoration-hover:	underline;
 
 /* ==========================================================================
 Typography
 // Font, line-height, and color for body text, headings, and more.
 ========================================================================== */
 $base-font:  	"Helvetica Neue", Helvetica, Arial, sans-serif;
-$headings-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $custom-font:	"Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $base-font-size:        14px;
+$small-font-size:		12px;
+$big-font-size:			12px;
+
 $base-line-height:      1.6;
 
 /* ==========================================================================
 Headings
 ========================================================================== */
+$headings-font: 	"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// H1
 $h1-font-size:		22px;
 $h1-line-height:	22px;
 $h1-margin-bottom:	22px;
+
+// H2
+$h2-font-size:		22px;
+$h2-line-height:	22px;
+$h2-margin-bottom:	22px;
+
+// H3
+$h3-font-size:		22px;
+$h3-line-height:	22px;
+$h3-margin-bottom:	22px;
+
+// H4
+$h4-font-size:		22px;
+$h4-line-height:	22px;
+$h4-margin-bottom:	22px;
+
+// H5
+$h5-font-size:		22px;
+$h5-line-height:	22px;
+$h5-margin-bottom:	22px;
+
+// H6
+$h6-font-size:		22px;
+$h6-line-height:	22px;
+$h6-margin-bottom:	22px;
+
 /* ==========================================================================
-Button styles
+Paragraph
 ========================================================================== */
+$p-size:		$base-font-size;
+$p-size-small:	$base-font-size / 2;
+$p-size-big:	$base-font-size * 2;
+
+// margins
+$p-margin:		20px;
+$p-margin-sm:	14px;
+$p-margin-lg:	26px;	
+
+/* ==========================================================================
+Button sizes
+========================================================================== */
+$btn-padding: 	10px 20px;
 
 /* ==========================================================================
 Form styles

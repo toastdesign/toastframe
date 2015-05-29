@@ -1,8 +1,15 @@
+body {
+	font-family: $base-font;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
 /* ==========================================================================
 Headings
 ========================================================================== */
 h1,h2,h3,h4,h5,h6 {
-
+	font-family: $headings-font;
 }
 
 h1 {
@@ -11,35 +18,44 @@ h1 {
 	margin-bottom:$h1-margin-bottom;
 }
 h2 {
-	font-size: $h1-font-size;
-	line-height: $h1-line-height;
-	margin-bottom:$h1-margin-bottom;
+	font-size: $h2-font-size;
+	line-height: $h2-line-height;
+	margin-bottom:$h2-margin-bottom;
 }
 h3 {
-	font-size: $h1-font-size;
-	line-height: $h1-line-height;
-	margin-bottom:$h1-margin-bottom;
+	font-size: $h3-font-size;
+	line-height: $h3-line-height;
+	margin-bottom:$h3-margin-bottom;
 }
 h4 {
-	font-size: $h1-font-size;
-	line-height: $h1-line-height;
-	margin-bottom:$h1-margin-bottom;
+	font-size: $h4-font-size;
+	line-height: $h4-line-height;
+	margin-bottom:$h4-margin-bottom;
 }
 h5 {
-	font-size: $h1-font-size;
-	line-height: $h1-line-height;
-	margin-bottom:$h1-margin-bottom;
+	font-size: $h5-font-size;
+	line-height: $h5-line-height;
+	margin-bottom:$h5-margin-bottom;
 }
 h6 {
-	font-size: $h1-font-size;
-	line-height: $h1-line-height;
-	margin-bottom:$h1-margin-bottom;
+	font-size: $h6-font-size;
+	line-height: $h6-line-height;
+	margin-bottom:$h6-margin-bottom;
 }
 
 /* ==========================================================================
 Paragraphs
 ========================================================================== */
-
+p {
+	font-size: $p-size;
+	margin-bottom:$p-margin;
+	
+	// small
+	small {
+		font-size: $p-size-small;
+		margin-bottom:$p-margin-sm;
+	}
+}
 /* ==========================================================================
 Quote
 ========================================================================== */

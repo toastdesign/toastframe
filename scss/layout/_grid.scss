@@ -1,13 +1,19 @@
 /* ==========================================================================
-Bootstrap sized grid
+1200 px wide container is ~ 1180px content
 ========================================================================== */
 $susy: (
 	columns: 12,
 	math: fluid,
-	gutters:(30/70),
-	column-width: 70px,
-	gutter-position: inside-static,
-  	global-box-sizing:border-box,
+	container: 1200px,
+  	container-position: center,
+	gutters:.25,
+	gutter-position: split,
+  	debug: (
+	    image: show-columns,
+	    color: rgba(#66f, .25),
+	    output: background,
+	    toggle: right,
+	  ),
 );
 
 /* ==========================================================================
@@ -16,3 +22,56 @@ Screen size variables
 $portrait: 	768px;
 $landscape:	1024px;
 $desktop:	1200px;
+
+/* ==========================================================================
+Base layout
+========================================================================== */
+
+#page {
+	@include container;
+
+	.test {
+		@include span(2);
+		border:1px solid;
+		margin-bottom:gutter();
+		background-color: white;
+		height:30px;
+	}
+
+	.test-2 {
+		@include span(4);
+		border:1px solid;
+		margin-bottom:gutter();
+		background-color: white;
+		height:30px;
+	}
+
+	.test-3 {
+		@include span(6);
+		border:1px solid;
+		margin-bottom:gutter();
+		background-color: white;
+		height:30px;
+	}
+
+	.test-4 {
+		@include span(12);
+		border:1px solid;
+		margin-bottom:gutter();
+		background-color: white;
+		height:30px;
+	}
+
+	.test-5 {
+		@include span(1);
+		border:1px solid;
+		margin-bottom:gutter();
+		background-color: white;
+		height:30px;
+	}
+
+
+	#masthead {
+		@extend %clearfix;
+	}
+}
