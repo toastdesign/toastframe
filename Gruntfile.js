@@ -30,9 +30,9 @@ module.exports = function (grunt) {
        },
        {
          expand: true,
-         cwd: '<%= config.app %>/_lib/magnific-popup',
-         src: 'dist/magnific-popup.css',
-         dest: '<%= config.dist %>'
+         cwd: '<%= config.app %>/_lib/magnific-popup/dist',
+         src: 'magnific-popup.css',
+         dest: '<%= config.dist %>/css'
        }]
       }
     },

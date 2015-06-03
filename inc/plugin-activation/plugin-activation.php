@@ -13,10 +13,7 @@ add_action( 'tgmpa_register', 'mytheme_require_plugins' );
 function mytheme_require_plugins() {
  
     $plugins = array(
-        // This is an example of how to include a plugin pre-packaged with a theme.
-        array(
-
-        ),
+        
         // Contact form 7 from wordpress
         array(
             'name'      => 'Contact form 7',
@@ -30,11 +27,20 @@ function mytheme_require_plugins() {
             'required'  => false,
         ),
 
-         array(
+        // Custom post type ui
+        array(
             'name'      => 'Custom post type ui',
             'slug'      => 'custom-post-type-ui',
             'required'  => false,
-        ),        
+        ), 
+
+        // Advanced csutom fields
+        array(
+            'name'      => 'Advanced Custom Fields',
+            'slug'      => 'advanced-custom-fields',
+            'required'  => false,
+        ),  
+             
     );
     $config = array( 
         'default_path' => '',                      // Default absolute path to pre-packaged plugins.

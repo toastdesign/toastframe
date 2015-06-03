@@ -32,10 +32,13 @@ $base-font:  	"Helvetica Neue", Helvetica, Arial, sans-serif;
 $custom-font:	"Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $base-font-size:        14px;
+$base-line:				22px;
+$base-line-height:      $base-line;
+
 $small-font-size:		12px;
 $big-font-size:			12px;
 
-$base-line-height:      1.6;
+
 
 /* ==========================================================================
 Headings
@@ -44,33 +47,22 @@ $headings-font: 	"Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // H1
 $h1-font-size:		22px;
-$h1-line-height:	22px;
-$h1-margin-bottom:	22px;
 
 // H2
 $h2-font-size:		22px;
-$h2-line-height:	22px;
-$h2-margin-bottom:	22px;
 
 // H3
 $h3-font-size:		22px;
-$h3-line-height:	22px;
-$h3-margin-bottom:	22px;
 
 // H4
 $h4-font-size:		22px;
-$h4-line-height:	22px;
-$h4-margin-bottom:	22px;
 
 // H5
 $h5-font-size:		22px;
-$h5-line-height:	22px;
-$h5-margin-bottom:	22px;
 
 // H6
 $h6-font-size:		22px;
-$h6-line-height:	22px;
-$h6-margin-bottom:	22px;
+
 
 /* ==========================================================================
 Paragraph
