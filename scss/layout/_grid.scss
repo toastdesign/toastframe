@@ -24,54 +24,5 @@ $landscape:	1024px;
 $desktop:	1200px;
 
 /* ==========================================================================
-Base layout
+Page
 ========================================================================== */
-
-#page {
-	@include container;
-
-	.test {
-		@include span(2);
-		border:1px solid;
-		margin-bottom:gutter();
-		background-color: white;
-		height:30px;
-	}
-
-	.test-2 {
-		@include span(4);
-		border:1px solid;
-		margin-bottom:gutter();
-		background-color: white;
-		height:30px;
-	}
-
-	.test-3 {
-		@include span(6);
-		border:1px solid;
-		margin-bottom:gutter();
-		background-color: white;
-		height:30px;
-	}
-
-	.test-4 {
-		@include span(12);
-		border:1px solid;
-		margin-bottom:gutter();
-		background-color: white;
-		height:30px;
-	}
-
-	.test-5 {
-		@include span(1);
-		border:1px solid;
-		margin-bottom:gutter();
-		background-color: white;
-		height:30px;
-	}
-
-
-	#masthead {
-		@extend %clearfix;
-	}
-}

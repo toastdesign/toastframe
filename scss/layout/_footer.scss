@@ -1,0 +1,11 @@
+#colophon {
+	@include container;
+
+	#copyright {
+		@include span(6);
+	}
+
+	#toastdesign {
+		@include span(6);
+	}
+}

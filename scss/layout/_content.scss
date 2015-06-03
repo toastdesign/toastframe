@@ -1,0 +1,11 @@
+#content {
+	@include container;
+
+	#primary {
+		@include span(9);
+	}
+
+	#secondary {
+		@include span(3);
+	}
+}

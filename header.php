@@ -20,52 +20,18 @@
 
 <body <?php body_class(); ?>>
 
-<nav id="site-navigation-off-canvas" class="main-navigation-off-canvas" role="navigation">
-	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'h-clean-list', 'container'=> '') ); ?>
-</nav><!-- #site-navigation -->
-
 <div id="page" class="hfeed site">
 
-	<div class="test-5">hallo</div>
-	<div class="test-5">hallo</div>
-	<div class="test-5">hallo</div>
-	<div class="test-5">hallo</div>
-	<div class="test-5">hallo</div>
-	<div class="test-5">hallo</div>
-	<div class="test-5">hallo</div>
-	<div class="test-5">hallo</div>
-	<div class="test-5">hallo</div>
-	<div class="test-5">hallo</div>
-	<div class="test-5">hallo</div>
-	<div class="test-5">hallo</div>
-
-	<div class="test">hallo</div>
-	<div class="test">hallo</div>
-	<div class="test">hallo</div>
-	<div class="test">hallo</div>
-	<div class="test">hallo</div>
-	<div class="test">hallo</div>
-
-	<div class="test-2">hallo</div>
-	<div class="test-2">hallo</div>
-	<div class="test-2">hallo</div>
-
-	<div class="test-3">hallo</div>
-	<div class="test-3">hallo</div>
-
-	<div class="test-4">hallo</div>
-
-
 	<header id="masthead" class="site-header clearfix" role="banner">
-		<div class="container">
-			<div id="site-branding">
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			</div><!-- .site-branding -->
-			
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'h-clean-list h-hor-list-dropdown', 'container'=> '') ); ?>
-			</nav><!-- #site-navigation -->
-		</div>
+
+		<div id="site-branding">
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		</div><!-- .site-branding -->
+		
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'h-clean-list h-hor-list-dropdown', 'container'=> '') ); ?>
+		</nav><!-- #site-navigation -->
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

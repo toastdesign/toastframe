@@ -11,11 +11,15 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer clearfix" role="contentinfo">
-		<div class="container">
-			<div class="site-info">
-				
-			</div>
+
+		<div id="copyright">
+			Copyright teksten en links
 		</div><!-- .site-info -->
+
+		<div id="toastdesign">
+			<a href="http://www.toastdesign.nl">Website door Toast Design</a>
+		</div><!-- .site-info -->
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
