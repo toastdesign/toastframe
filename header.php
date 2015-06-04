@@ -29,9 +29,11 @@
 		</div><!-- .site-branding -->
 		
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'h-clean-list h-hor-list-dropdown', 'container'=> '') ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'h-hor-list h-pull-right', 'container'=> '') ); ?>
 		</nav><!-- #site-navigation -->
 
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+
+	<a href="/" class="btn-secondary">Hallo button</a>

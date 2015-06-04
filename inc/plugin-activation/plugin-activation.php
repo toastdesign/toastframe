@@ -39,7 +39,14 @@ function mytheme_require_plugins() {
             'name'      => 'Advanced Custom Fields',
             'slug'      => 'advanced-custom-fields',
             'required'  => false,
-        ),  
+        ),
+
+        // Advanced csutom fields
+        array(
+            'name'      => 'iThemes Security',
+            'slug'      => 'better-wp-security',
+            'required'  => false,
+        ),
              
     );
     $config = array( 

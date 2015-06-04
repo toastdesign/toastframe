@@ -2,10 +2,57 @@
 	@include container;
 
 	#copyright {
-		@include span(6);
+		@include span(12);
+		border:1px solid;
 	}
 
 	#toastdesign {
-		@include span(6);
+		@include span(12);
+		border:1px solid;
+	}
+
+	/* ==========================================================================
+	From Portrait ~768px
+	========================================================================== */
+	@include breakpoint($portrait){
+		#copyright {
+			@include span(6);
+
+		}
+
+		#toastdesign {
+			@include span(6);
+
+		}
+	}
+	
+	/* ==========================================================================
+	From Landscape ~1024px
+	========================================================================== */
+	@include breakpoint($landscape){
+		#copyright {
+			@include span(6);
+
+		}
+
+		#toastdesign {
+			@include span(6);
+
+		}
+	}
+
+	/* ==========================================================================
+	From Desktop ~1200px
+	========================================================================== */
+	@include breakpoint($landscape){
+		#copyright {
+			@include span(6);
+
+		}
+
+		#toastdesign {
+			@include span(6);
+
+		}
 	}
 }

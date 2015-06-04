@@ -1,15 +1,26 @@
 /* ==========================================================================
+Sizes
+========================================================================== */
+$portrait: 	768px;
+$landscape:	1024px;
+$desktop:	1200px;
+
+/* ==========================================================================
 Colors
 // Gray and brand colors for use across website.
 ========================================================================== */
-$black: 		#000000;
-$gray: 			#333333;
-$gray-light: 	#868686;
-$white:			#ffffff;
+$black: 			#000000;
+$gray: 				#333333;
+$gray-light: 		#868686;
+$white:				#ffffff;
 
-$orange: 		#ff6314;
-$blue-dark: 	#ff6600;
-$blue-light: 	#efefef;
+
+$brand-primary:		#ff6314;
+$brand-secondary:	#779554;
+
+$orange: 			#ff6314;
+$blue-dark: 		#ff6600;
+$blue-light: 		#efefef;
 
 /* ==========================================================================
 Scafolding
@@ -77,9 +88,18 @@ $p-margin-sm:	14px;
 $p-margin-lg:	26px;	
 
 /* ==========================================================================
-Button sizes
+Buttons
 ========================================================================== */
 $btn-padding: 	10px 20px;
+
+// text-colors
+$btn-color-light: 	#fff;
+$btn-color-dark: 	#333;
+
+// background-colors
+$btn-default: 	#333;
+$btn-primary:	$brand-primary;
+$btn-secondary:	$brand-secondary;
 
 /* ==========================================================================
 Form styles

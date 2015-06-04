@@ -10,18 +10,12 @@ $susy: (
 	gutter-position: split,
   	debug: (
 	    image: show-columns,
-	    color: rgba(#66f, .25),
+	    color: rgba(#66f, .15),
 	    output: background,
-	    toggle: right,
 	  ),
 );
 
-/* ==========================================================================
-Screen size variables
-========================================================================== */
-$portrait: 	768px;
-$landscape:	1024px;
-$desktop:	1200px;
+
 
 /* ==========================================================================
 Page
