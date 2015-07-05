@@ -19,9 +19,9 @@ Helpers
 /* ==========================================================================
 Layout
 ========================================================================== */
-@import "layout/grid"; 		// Global grid and layout
+@import "layout/layout"; 	// Content layout
+@import "layout/navigation";// Header layout
 @import "layout/header"; 	// Header layout
-@import "layout/content"; 	// Content layout
 @import "layout/footer"; 	// Footer layout
 @import "layout/sidebar"; 	// Sidebar layout
 @import "layout/forms"; 	// Form layout

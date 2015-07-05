@@ -22,18 +22,18 @@
 
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header clearfix" role="banner">
+	<header id="masthead" class="site-header" role="banner">
 
-		<div id="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-		</div><!-- .site-branding -->
-		
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'h-hor-list h-pull-right', 'container'=> '') ); ?>
-		</nav><!-- #site-navigation -->
+		<div class="container">
+			<div id="site-branding">
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			</div><!-- .site-branding -->
+			
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'navbar static-navbar', 'container'=> '') ); ?>
+			</nav><!-- #site-navigation -->
+		</div>
 
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-
-	<a href="/" class="btn-secondary">Hallo button</a>

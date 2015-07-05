@@ -1,4 +1,24 @@
 /* ==========================================================================
+Susy Grid
+========================================================================== */
+$susy: (
+	columns: 12,
+	math: fluid,
+	container: 1170px,
+  	container-position: center,
+	gutters:(30px / 70px),
+	gutter-position: inside-static,
+	column-width:70px,
+  	debug: (
+	    image: show-columns,
+	    color: rgba(#66f, .15),
+	    output: background,
+	  ),
+);
+
+
+
+/* ==========================================================================
 Sizes
 ========================================================================== */
 $portrait: 	768px;
@@ -10,17 +30,15 @@ Colors
 // Gray and brand colors for use across website.
 ========================================================================== */
 $black: 			#000000;
+$gray-dark: 		#333333;
 $gray: 				#333333;
 $gray-light: 		#868686;
 $white:				#ffffff;
 
 
-$brand-primary:		#ff6314;
-$brand-secondary:	#779554;
-
-$orange: 			#ff6314;
-$blue-dark: 		#ff6600;
-$blue-light: 		#efefef;
+$brand-one:			#ff6314;
+$brand-two:			#779554;
+$brand-three:		#779554;
 
 /* ==========================================================================
 Scafolding
@@ -30,8 +48,8 @@ $body-bg:               #fff;
 $text-color:            #3a3a3a;
 
 // Links
-$link-color:            $blue-dark;
-$link-hover-color:      $orange;
+$link-color:            #333;
+$link-hover-color:      #333;
 $link-decoration:		none;
 $link-decoration-hover:	underline;
 
@@ -43,63 +61,44 @@ $base-font:  	"Helvetica Neue", Helvetica, Arial, sans-serif;
 $custom-font:	"Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $base-font-size:        14px;
-$base-line:				22px;
-$base-line-height:      $base-line;
-
-$small-font-size:		12px;
-$big-font-size:			12px;
-
+$base-line-height:		1.5;
 
 
 /* ==========================================================================
 Headings
 ========================================================================== */
 $headings-font: 	"Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-weight: bold;
 
 // H1
-$h1-font-size:		22px;
+$h1-font-size:		32px;
+$base-line-height:	1.5;
 
 // H2
-$h2-font-size:		22px;
+$h2-font-size:		28px;
+$base-line-height:	1.5;
 
 // H3
-$h3-font-size:		22px;
+$h3-font-size:		24px;
+$base-line-height:	1.5;
 
 // H4
-$h4-font-size:		22px;
+$h4-font-size:		20px;
+$base-line-height:	1.5;
 
 // H5
-$h5-font-size:		22px;
+$h5-font-size:		16px;
+$base-line-height:	1.5;
 
 // H6
-$h6-font-size:		22px;
+$h6-font-size:		12px;
+$base-line-height:	1.5;
 
-
-/* ==========================================================================
-Paragraph
-========================================================================== */
-$p-size:		$base-font-size;
-$p-size-small:	$base-font-size / 2;
-$p-size-big:	$base-font-size * 2;
-
-// margins
-$p-margin:		20px;
-$p-margin-sm:	14px;
-$p-margin-lg:	26px;	
 
 /* ==========================================================================
 Buttons
 ========================================================================== */
 $btn-padding: 	10px 20px;
-
-// text-colors
-$btn-color-light: 	#fff;
-$btn-color-dark: 	#333;
-
-// background-colors
-$btn-default: 	#333;
-$btn-primary:	$brand-primary;
-$btn-secondary:	$brand-secondary;
 
 /* ==========================================================================
 Form styles
@@ -110,4 +109,12 @@ $input-color:			#ccc;
 $input-border:			1px;
 $input-border-color:	#ccc;
 $input-border-radius:	0px;
+
+/* ==========================================================================
+Captions
+========================================================================== */
+$caption-padding:		10px;
+$caption-font-size:		12px;
+$caption-color:			#999;
+$caption-background: 	$white;
 

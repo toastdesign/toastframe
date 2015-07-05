@@ -19,18 +19,3 @@ body {
 /* ==========================================================================
 Link styles
 ========================================================================== */
-a {
-	color:$link-color;
-	text-decoration: $link-decoration;
-
-	// Different states
-	&:active {
-
-	}
-	&:hover {
-		text-decoration:$link-decoration-hover;
-	}
-	&:focus {
-
-	}
-}
