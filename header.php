@@ -20,7 +20,19 @@
 
 <body <?php body_class(); ?>>
 
-<div id="page" class="hfeed site">
+
+<div class="oc-navigation">
+	<h1>Brand logo</h1>
+	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'oc-', 'container'=> '') ); ?>
+	<div class="contact">
+		Tel: 010-1234567
+	</div>
+</div>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
+
+<div id="page" class="hfeed site site-wrap">
 
 	<header id="masthead" class="site-header" role="banner">
 
