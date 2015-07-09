@@ -3,6 +3,41 @@ Variables
 ========================================================================== */
 $nav-width: 300px;
 
+
+/* ==========================================================================
+Maion navigation
+========================================================================== */
+.navbar {
+    float:right;
+
+    li {
+        float:left;
+        display: block;
+
+        a {
+            position: relative;
+            display: block;
+            padding: 25px 20px;
+            font-family: $custom-font;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color:$text-color;
+
+            &:hover {
+                background-color: rgba(0,0,0,0.1);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
 /* ==========================================================================
 Off canvas navigation
 ========================================================================== */

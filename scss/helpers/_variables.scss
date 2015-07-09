@@ -4,17 +4,17 @@ Susy Grid
 $susy: (
 	columns: 12,
 	math: fluid,
-	container: 1170px,
+	container:1200px,
   	container-position: center,
-	gutters:(30px / 70px),
-	gutter-position: inside-static,
-	column-width:70px,
+	gutters:0.25,
+	gutter-position: after,
   	debug: (
 	    image: show-columns,
 	    color: rgba(#66f, .15),
 	    output: background,
 	  ),
 );
+
 
 
 

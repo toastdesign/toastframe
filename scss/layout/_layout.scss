@@ -20,6 +20,7 @@ Main html structure
 
 	#site-navigation {
 		@include span(9);
+		@include last;
 	}
 
 }
