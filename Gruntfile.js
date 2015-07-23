@@ -58,11 +58,11 @@ module.exports = function (grunt) {
     sass: {
         options: {
             sourceMap: true,
-            outputStyle: 'compressed',
+            outputStyle: 'nested',
         },
         dist: {
             files: {
-                'dist/css/master.css': 'scss/master.scss'
+                'style.css': 'scss/style.scss'
             },
         }
     },

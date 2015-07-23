@@ -81,7 +81,7 @@ add_action( 'after_setup_theme', 'toastframe_setup' );
  */
 function toastframe_scripts() {
 
-	wp_register_style('toastframe-style', get_template_directory_uri() . '/dist/css/master.css');
+	wp_register_style('toastframe-style', get_template_directory_uri() . '/style.css');
 	wp_register_style('font-awesome', get_template_directory_uri() . '/dist/css/font-awesome.min.css');
 
 	wp_enqueue_style( 'font-awesome');
