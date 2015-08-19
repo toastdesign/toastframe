@@ -31,12 +31,12 @@ code, kbd, tt, var {
 }
 
 abbr, acronym {
-	border-bottom: 1px dotted $color_border-abbr;
+	border-bottom: 1px dotted $color;
 	cursor: help;
 }
 
 mark, ins {
-	background: $color_background-ins;
+	background: $color;
 	text-decoration: none;
 }
 

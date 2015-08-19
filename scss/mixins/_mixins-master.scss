@@ -1,3 +1,17 @@
+/* ==========================================================================
+Placeholders
+========================================================================== */
+%clean-list {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+
+/* ==========================================================================
+Mixins
+========================================================================== */
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
@@ -20,4 +34,11 @@
 // Clear after (not all clearfix need this also)
 @mixin clearfix-after() {
 	clear: both;
+}
+
+// Text replacement
+@mixin hide-text {
+	font: 0;
+	height:0;
+	color:transparent;
 }

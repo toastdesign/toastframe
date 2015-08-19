@@ -26,10 +26,14 @@
 
 		<div class="container">
 			<div id="site-branding">
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 			</div><!-- .site-branding -->
 			
-			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<nav id="site-navigation" class="main-menu" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'navbar static-navbar', 'container'=> '') ); ?>
+			</nav><!-- #site-navigation -->
+
+			<nav id="site-navigation" class="mobile-main-menu" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'navbar static-navbar', 'container'=> '') ); ?>
 			</nav><!-- #site-navigation -->
 		</div>

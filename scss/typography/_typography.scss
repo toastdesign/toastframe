@@ -11,7 +11,7 @@ textarea {
 }
 
 body {
-	color: $color_text-screen;
+	color: $color-body-text;
 	font-family: $body-font-family;
 	line-height: $baseline;
 }
@@ -22,17 +22,17 @@ p {
 
 a,
 a:visited {
-	color: $color_link;
+	color: $color-link;
 
 	&:hover {
-		color: $color_link_hover;
+		color: $color-link-hover;
 	}
 }
 
 hr {
 	border: 0;
 
-	background-color: $color_background-hr;
+	background-color: $color-hr;
 
 	height: 1px;
 	margin: $baseline 0;
