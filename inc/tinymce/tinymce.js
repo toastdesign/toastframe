@@ -140,7 +140,7 @@
                 title : 'Voeg button toe',  
                 image : url+'/button.png',  
                 onclick : function() {  
-                     ed.selection.setContent('[tst_button url="#"]Button tekst[/tst_button]');  
+                     ed.selection.setContent('[tst_button url="#" color="purple"]Button tekst[/tst_button]');  
   
                 }  
             });  
