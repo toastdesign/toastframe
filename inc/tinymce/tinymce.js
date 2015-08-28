@@ -130,5 +130,27 @@
     tinymce.PluginManager.add('one_fifth', tinymce.plugins.one_fifth);  
 })();
 
+/*-----------------------------------------------------------------------------------*/
+/*  Add TinyMCE button button
+/*-----------------------------------------------------------------------------------*/
+(function() {  
+    tinymce.create('tinymce.plugins.tst_btn', {  
+        init : function(ed, url) {  
+            ed.addButton('tst_btn', {  
+                title : 'Voeg button toe',  
+                image : url+'/button.png',  
+                onclick : function() {  
+                     ed.selection.setContent('[tst_button url="#"]Button tekst[/tst_button]');  
+  
+                }  
+            });  
+        },  
+        createControl : function(n, cm) {  
+            return null;  
+        },  
+    });  
+    tinymce.PluginManager.add('tst_btn', tinymce.plugins.tst_btn);  
+})();
+
 
 

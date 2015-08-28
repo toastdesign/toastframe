@@ -90,8 +90,12 @@ function toast_five_sixth_last( $atts, $content = null ) {
    return '<div class="five_sixth last">' . do_shortcode($content) . '</div><div class="clear"></div>';
 }
 
-
-
+function toast_button($atts, $content = null) {
+    extract( shortcode_atts( array(
+        'url' => '#'
+    ), $atts ) );
+    return '<a href="'.$url.'" class="btn"><span>' . do_shortcode($content) . '</span></a>';
+}
 
 
 /* ----------------------------------------------------- */
@@ -126,6 +130,7 @@ function pre_process_shortcode($content) {
     add_shortcode('one_sixth_last', 'toast_one_sixth_last');
     add_shortcode('five_sixth', 'toast_five_sixth');
     add_shortcode('five_sixth_last', 'toast_five_sixth_last');
+    add_shortcode('tst_button', 'toast_button');
 
     // Do the shortcode (only the one above is registered)
     $content = do_shortcode($content);
@@ -156,17 +161,18 @@ function add_button() {
 
 // Define Position of TinyMCE Icons
 function register_button_3($buttons) {  
-   array_push($buttons, "one_half", "one_third", "two_third", "one_fourth", "three_fourth", "one_fifth");  
+   array_push($buttons, "one_half", "one_third", "two_third", "one_fourth", "three_fourth", "one_fifth", "tst_btn");  
    return $buttons;  
 }
 
 function add_plugin($plugin_array) {  
-   $plugin_array['one_half'] = get_template_directory_uri().'/inc/tinymce/tinymce.js';
-   $plugin_array['one_third'] = get_template_directory_uri().'/inc/tinymce/tinymce.js';
-   $plugin_array['two_third'] = get_template_directory_uri().'/inc/tinymce/tinymce.js';
-   $plugin_array['one_fourth'] = get_template_directory_uri().'/inc/tinymce/tinymce.js';
-   $plugin_array['three_fourth'] = get_template_directory_uri().'/inc/tinymce/tinymce.js';
-   $plugin_array['one_fifth'] = get_template_directory_uri().'/inc/tinymce/tinymce.js';
+   $plugin_array['one_half'] =      get_template_directory_uri().'/inc/tinymce/tinymce.js';
+   $plugin_array['one_third'] =     get_template_directory_uri().'/inc/tinymce/tinymce.js';
+   $plugin_array['two_third'] =     get_template_directory_uri().'/inc/tinymce/tinymce.js';
+   $plugin_array['one_fourth'] =    get_template_directory_uri().'/inc/tinymce/tinymce.js';
+   $plugin_array['three_fourth'] =  get_template_directory_uri().'/inc/tinymce/tinymce.js';
+   $plugin_array['one_fifth'] =     get_template_directory_uri().'/inc/tinymce/tinymce.js';
+   $plugin_array['tst_btn'] =       get_template_directory_uri().'/inc/tinymce/tinymce.js';
 
    return $plugin_array;  
 }  
