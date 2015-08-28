@@ -1,4 +1,22 @@
 /* ==========================================================================
+Susy settings
+========================================================================== */
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: 768px,
+  container-position: center,
+  columns: 6,
+  gutters:0,
+  column-width: false,
+  global-box-sizing: border-box,
+  last-flow: to,
+);
+
+
+/* ==========================================================================
 Main Colors
 ========================================================================== */
 $color-one: 	#333;
@@ -6,6 +24,8 @@ $color-two: 	#333;
 $color-three: 	#333;
 $color-four: 	#333;
 $color-five: 	#333;
+
+$text-color:	$color-one;
 
 /* ==========================================================================
 Links
@@ -19,14 +39,17 @@ $alt-link-color-hover:;
 /* ==========================================================================
 Buttons
 ========================================================================== */
-
+$btn-font-size:	inherit;
+$btn-bg-color:	$color-one;
+$btn-color:		inherit;
+$btn-padding:	10px 15px;
 
 
 /* ==========================================================================
 Typography
 ========================================================================== */
-$font-family:;
-$font-size:;
-$font-color:;
+$font-family:	'Open Sans', sans-serif;
+$font-size:		16px;
+$font-color:	$text-color;
 
 
