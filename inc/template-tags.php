@@ -111,12 +111,6 @@ function toastframe_entry_footer() {
 		}
 	}
 
-	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'toastframe' ), __( '1 Comment', 'toastframe' ), __( '% Comments', 'toastframe' ) );
-		echo '</span>';
-	}
-
 	edit_post_link( __( 'Edit', 'toastframe' ), '<span class="edit-link">', '</span>' );
 }
 endif;

@@ -52,11 +52,11 @@ function toastframe_setup() {
 	) );
 
 	/*
-	 * Switch default core markup for search form, comment form, and comments
+	 * Switch default core markup for search form
 	 * to output valid HTML5.
 	 */
 	add_theme_support( 'html5', array(
-		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
+		'search-form', 'gallery', 'caption',
 	) );
 
 	/*
@@ -92,10 +92,6 @@ function toastframe_scripts() {
 	
 	wp_enqueue_script('modernizr');
 	wp_enqueue_script('toast-scripts');
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
 }
 add_action( 'wp_enqueue_scripts', 'toastframe_scripts' );
 
