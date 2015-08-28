@@ -92,10 +92,9 @@ function toast_five_sixth_last( $atts, $content = null ) {
 
 function toast_button($atts, $content = null) {
     extract( shortcode_atts( array(
-        'url' => '#',
-        'color' => ''
+        'url' => '#'
     ), $atts ) );
-    return '<a href="'.$url.'" class="btn '.$color.'"><span>' . do_shortcode($content) . '</span></a>';
+    return '<a href="'.$url.'" class="btn"><span>' . do_shortcode($content) . '</span></a>';
 }
 
 
@@ -162,7 +161,7 @@ function add_button() {
 
 // Define Position of TinyMCE Icons
 function register_button_3($buttons) {  
-   array_push($buttons, "tst_btn");  
+   array_push($buttons, "one_half", "one_third", "two_third", "one_fourth", "three_fourth", "one_fifth", "tst_btn");  
    return $buttons;  
 }
 
