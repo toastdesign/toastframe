@@ -1,5 +1,114 @@
 /* ==========================================================================
+Site header
+========================================================================== */
+.site-header {
+	background-color: #eee;
+	height:70px;
+	line-height: 70px;
+
+}
+
+/* ==========================================================================
+Main menu
+========================================================================== */
+.main-menu {
+	@extend %hide-mobile;
+
+	.navbar {
+		@extend %clearfix;
+		@extend %clean-list;
+		@extend %hor-list;
+		@extend %pull-right;
+
+		li {
+			@extend %box-sizing;
+			@extend %transition;
+			margin-left:15px;
+			border-bottom:5px solid transparent;
+			height:70px;
+			
+			&:hover,
+			&.current-menu-item {
+				border-color:#ff6600;
+			}
+			
+			a {
+				display: block;
+				text-decoration: none;
+			}
+		}	
+	}
+}
+
+/* ==========================================================================
+Mobile main menu
+========================================================================== */
+.mobile-main-menu {
+	@extend %show-mobile;
+	display:none;
+	
+	.navbar {
+		@extend %clean-list;
+
+		li {
+			border-bottom:1px dotted #333;
+
+			a {
+				padding:10px 0;
+				display: block;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
+/* ==========================================================================
 Buttons
+========================================================================== */
+.btn {
+	@extend %btn;
+
+	&.btn-small {
+		font-size:85%;
+	}
+
+	&.btn-big {
+		font-size:115%;
+	}
+	
+	&.btn-green {
+		background-color: green;
+		color:white;
+	}
+
+	&.btn-blue {
+		background-color: blue;
+		color:white;
+	}
+}
+
+button {
+	padding:0;
+	margin:0;
+	&:focus,
+	&:active {
+		outline: none;
+	}
+
+	&.hamburger {
+		@include hide-text;
+		background-image: url(http://lorempixel.com/400/400);
+		background-size:40px 40px;
+		background-position: center right;
+		background-repeat:no-repeat;
+	}
+}
+  
+
+
+/* ==========================================================================
+Default lists
 ========================================================================== */
 
 

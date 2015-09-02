@@ -18,7 +18,7 @@
 			</div><!-- .site-info -->
 			
 			<div id="toastdesign">
-				<a href="http://www.toastdesign.nl">Website door Toast Design</a>
+				<a href="http://www.toastdesign.nl" target="_blank">Website door Toast Design</a>
 			</div><!-- .site-info -->
 		</div>
 
@@ -27,7 +27,10 @@
 
 <?php wp_footer(); ?>
 
-<?php echo of_get_option('googlecode'); ?>
+<!-- Google analitics script -->
+<script>
+	<?php echo of_get_option('googlecode'); ?>
+</script>
 
 </body>
 </html>

@@ -162,7 +162,7 @@ function add_button() {
 
 // Define Position of TinyMCE Icons
 function register_button_3($buttons) {  
-   array_push($buttons, "tst_btn");  
+   array_push($buttons,"one_third", "two_third", "one_half", "one_fourth", "tst_btn");  
    return $buttons;  
 }
 

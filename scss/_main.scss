@@ -2,21 +2,47 @@
 Base Layout
 ========================================================================== */
 #page {
-	@include container;
+	max-width:1440px;
+	margin:0 auto;
+
+	.container {
+		@include container;
+		padding:0px 15px;
+
+		@include breakpoint($desktop){
+			padding:0;
+		}
+	}
 }
 	
 	/* ==========================================================================
 	Masthead containes nav, logo ect
 	========================================================================== */
 	#masthead {
+		@extend %clearfix;
+		
+		#site-branding {
+			@include span(3);
+		}
 
+		#site-navigation {
+			@include span(9);
+		}
+
+		#toggle-mobile-nav {
+			@include last;
+			@extend %show-mobile;
+			height:70px;
+			line-height: 70px;
+			border:0;
+		}
 	}
 	
 	/* ==========================================================================
 	Content contains actual site content
 	========================================================================== */
 	#content {
-
+		
 	}
 	
 	/* ==========================================================================
@@ -24,10 +50,31 @@ Base Layout
 	========================================================================== */
 	#colophon {
 
+		#copyright {
+			
+			@include breakpoint($landscape){
+				@include span(3);
+			}
+		}
+
+		#toastdesign {
+			
+			@include breakpoint($landscape){
+				@include span(3);
+			}		
+		}
+
 	}
+
+/* ==========================================================================
+Columns in content
+========================================================================== */
+.one_half {
+	@include span(6);
+}
 
 /* ==========================================================================
 Modules
 ========================================================================== */
-
+@import "modules";
 

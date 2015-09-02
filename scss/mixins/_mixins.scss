@@ -7,6 +7,65 @@ Placeholders
 	list-style-type: none;
 }
 
+%btn {
+	font-size:$btn-font-size;
+	background-color:$btn-bg-color;
+	color:$btn-color;
+	padding:$btn-padding;
+	border-radius:$btn-border-radius;
+	
+	display: inline-block;
+	text-decoration: none;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%clean-list {
+	list-style-type: none;
+	padding:0;
+	margin:0;
+}
+
+%hor-list {
+	
+	li {
+		float:left;
+	}
+}
+
+%box-sizing {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box; 
+	        box-sizing: border-box; 
+}
+
+%transition {
+	transition:(all 0.3s);
+}
+
+%hide-mobile {
+	display: none;
+	@include breakpoint($landscape){
+		display:block;
+	}
+}
+
+%show-mobile {
+	display: block;
+	@include breakpoint($landscape){
+		display:none;
+	}
+}
+
+%pull-right {
+	float:right;
+}
 
 /* ==========================================================================
 Mixins
@@ -17,3 +76,8 @@ Mixins
 	height:0;
 	color:transparent;
 }
+
+
+/* ==========================================================================
+Buttons
+========================================================================== */

@@ -14,6 +14,9 @@ Tags:
 Susy settings
 ========================================================================== */
 /* ==========================================================================
+Sizes
+========================================================================== */
+/* ==========================================================================
 Main Colors
 ========================================================================== */
 /* ==========================================================================
@@ -28,8 +31,61 @@ Typography
 /* ==========================================================================
 Placeholders
 ========================================================================== */
+.main-menu .navbar, .mobile-main-menu .navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.btn {
+  font-size: inherit;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 3px;
+  display: inline-block;
+  text-decoration: none; }
+
+#masthead:after, .main-menu .navbar:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.main-menu .navbar, .mobile-main-menu .navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.main-menu .navbar li {
+  float: left; }
+
+.main-menu .navbar li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.main-menu .navbar li {
+  transition: all 0.3s; }
+
+.main-menu {
+  display: none; }
+  @media  (min-width: 1024px) {
+    .main-menu {
+      display: block; } }
+
+#masthead #toggle-mobile-nav, .mobile-main-menu {
+  display: block; }
+  @media  (min-width: 1024px) {
+    #masthead #toggle-mobile-nav, .mobile-main-menu {
+      display: none; } }
+
+.main-menu .navbar {
+  float: right; }
+
 /* ==========================================================================
 Mixins
+========================================================================== */
+/* ==========================================================================
+Buttons
 ========================================================================== */
 /*--------------------------------------------------------------
 # Normalize
@@ -179,28 +235,124 @@ td, th {
 Base Layout
 ========================================================================== */
 #page {
-  max-width: 768px;
-  margin-left: auto;
-  margin-right: auto; }
-  #page:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  max-width: 1440px;
+  margin: 0 auto; }
+  #page .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 15px; }
+    #page .container:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    @media  (min-width: 1366px) {
+      #page .container {
+        padding: 0; } }
 
 /* ==========================================================================
 	Masthead containes nav, logo ect
 	========================================================================== */
+#masthead #site-branding {
+  width: 25%;
+  float: left; }
+#masthead #site-navigation {
+  width: 75%;
+  float: left; }
+#masthead #toggle-mobile-nav {
+  float: right;
+  height: 70px;
+  line-height: 70px;
+  border: 0; }
+
 /* ==========================================================================
 	Content contains actual site content
 	========================================================================== */
 /* ==========================================================================
 	Footer colophon
 	========================================================================== */
+@media  (min-width: 1024px) {
+  #colophon #copyright {
+    width: 25%;
+    float: left; } }
+@media  (min-width: 1024px) {
+  #colophon #toastdesign {
+    width: 25%;
+    float: left; } }
+
+/* ==========================================================================
+Columns in content
+========================================================================== */
+.one_half {
+  width: 50%;
+  float: left; }
+
 /* ==========================================================================
 Modules
 ========================================================================== */
 /* ==========================================================================
+Site header
+========================================================================== */
+.site-header {
+  background-color: #eee;
+  height: 70px;
+  line-height: 70px; }
+
+/* ==========================================================================
+Main menu
+========================================================================== */
+.main-menu .navbar li {
+  margin-left: 15px;
+  border-bottom: 5px solid transparent;
+  height: 70px; }
+  .main-menu .navbar li:hover, .main-menu .navbar li.current-menu-item {
+    border-color: #ff6600; }
+  .main-menu .navbar li a {
+    display: block;
+    text-decoration: none; }
+
+/* ==========================================================================
+Mobile main menu
+========================================================================== */
+.mobile-main-menu {
+  display: none; }
+  .mobile-main-menu .navbar li {
+    border-bottom: 1px dotted #333; }
+    .mobile-main-menu .navbar li a {
+      padding: 10px 0;
+      display: block;
+      text-decoration: none; }
+
+/* ==========================================================================
 Buttons
+========================================================================== */
+.btn.btn-small {
+  font-size: 85%; }
+.btn.btn-big {
+  font-size: 115%; }
+.btn.btn-green {
+  background-color: green;
+  color: white; }
+.btn.btn-blue {
+  background-color: blue;
+  color: white; }
+
+button {
+  padding: 0;
+  margin: 0; }
+  button:focus, button:active {
+    outline: none; }
+  button.hamburger {
+    font: 0;
+    height: 0;
+    color: transparent;
+    background-image: url(http://lorempixel.com/400/400);
+    background-size: 40px 40px;
+    background-position: center right;
+    background-repeat: no-repeat; }
+
+/* ==========================================================================
+Default lists
 ========================================================================== */
 /* ==========================================================================
 Media

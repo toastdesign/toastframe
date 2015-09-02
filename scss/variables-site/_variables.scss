@@ -5,15 +5,22 @@ $susy: (
   flow: ltr,
   math: fluid,
   output: float,
-  gutter-position: after,
-  container: 768px,
+  gutter-position: split,
+  container: 1280px,
   container-position: center,
-  columns: 6,
+  columns: 12,
   gutters:0,
   column-width: false,
   global-box-sizing: border-box,
   last-flow: to,
 );
+
+/* ==========================================================================
+Sizes
+========================================================================== */
+$portrait:768px;
+$landscape:1024px;
+$desktop:1366px;
 
 
 /* ==========================================================================
@@ -41,8 +48,9 @@ Buttons
 ========================================================================== */
 $btn-font-size:	inherit;
 $btn-bg-color:	$color-one;
-$btn-color:		inherit;
+$btn-color:		white;
 $btn-padding:	10px 15px;
+$btn-border-radius:3px;
 
 
 /* ==========================================================================

@@ -27,17 +27,22 @@
 		<div class="container">
 			<div id="site-branding">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			</div><!-- .site-branding -->
+			</div>
 			
 			<nav id="site-navigation" class="main-menu" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'navbar static-navbar', 'container'=> '') ); ?>
-			</nav><!-- #site-navigation -->
+			</nav>
 
-			<nav id="site-navigation" class="mobile-main-menu" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'navbar static-navbar', 'container'=> '') ); ?>
-			</nav><!-- #site-navigation -->
+			<button id="toggle-mobile-nav" class="hamburger">Menu</button>
+
 		</div>
 
 	</header><!-- #masthead -->
+
+	<nav id="mobile-site-navigation" class="mobile-main-menu" role="navigation">
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'navbar static-navbar', 'container'=> '') ); ?>
+	</nav>
+
+	<img src="http://lorempixel.com/1440/400" alt="Alt Title">
 
 	<div id="content" class="site-content">
